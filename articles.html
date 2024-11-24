@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Articles page</title>
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="css/framework.css" />
+  <link rel="stylesheet" href="css/master.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&#038;display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="page d-flex">
+    <div class="sidebar bg-white p-20 p-relative">
+      <h3 class="p-relative txt-c mt-0">Article</h3>
+      <ul>
+        <li>
+          <a class="active d-flex align-center fs-14 c-black rad-6 p-10" href="index.html">
+            <i class="fa-regular fa-chart-bar fa-fw"></i>
+            <span>Home page</span>
+          </a>
+        </li>
+
+        <li>
+          <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="profile.html">
+            <i class="fa-regular fa-user fa-fw"></i>
+            <span>Profile</span>
+          </a>
+        </li>
+
+
+        <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="articles.html">
+          <i class="fa-solid fa-newspaper"></i>
+          <span>Articles</span>
+        </a>
+        </li>
+
+        <li>
+          <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="abutUs.html">
+            <i class="fa-regular fa-credit-card fa-fw"></i>
+            <span>abut Us</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="content w-full">
+      <!-- Start Head -->
+      <div class="head bg-white p-15 between-flex">
+        <div class="search p-relative">
+          <input class="p-10" type="search" placeholder="Type A Keyword" />
+        </div>
+        <div class="icons d-flex align-center">
+          <span class="notification p-relative">
+            <i class="fa-regular fa-bell fa-lg"></i>
+          </span>
+          <img decoding="async" src="imgs/avatar.png" alt="" />
+        </div>
+      </div>
+      <!-- End Head -->
+      <h1 class="p-relative">Articles page</h1>
+      <div class="friends-page d-grid m-20 gap-20" id="total">
+
+      </div>
+    </div>
+  </div>
+</body>
+
+<script>
+  let articalList = [
+    {
+      "img": "imgs/oop.jpg",
+      "authorNmae": "Amer Monther",
+      "aricalsTitle": "Object Oriented Programming",
+      "readers": "36",
+      "joined": "Joined 02/10/2021",
+      "url": "./artical/article5.html"
+
+    },
+    {
+      "img": "imgs/ai-7977960_1280.jpg",
+      "authorNmae": "Ameer Abohamra",
+      "aricalsTitle": "the future of AI",
+      "readers": "73",
+      "joined": "Joined 04/9/2023",
+      "url": "./artical/article1.html"
+
+    },
+    {
+      "img": "./imgs/team-4817006_960_720.jpg",
+      "authorNmae": "Amer Monther",
+      "aricalsTitle": "Human development",
+      "readers": "71",
+      "joined": "Joined 11/8/2022",
+      "url": "./artical/article2.html"
+
+    },
+    {
+      "img": "./imgs/nail-polish-1150358_1280.jpg",
+      "authorNmae": "Taj Altaki",
+      "aricalsTitle": "Harmful effects of cosmetics",
+      "readers": "63",
+      "joined": "Joined 07/7/2019",
+      "url": "./artical/article3.html"
+
+    },
+    {
+      "img": "./imgs/doctor-6146905_960_720.webp",
+      "authorNmae": "Ammar Bhsas",
+      "aricalsTitle": "Thoracic Surgery",
+      "readers": "61",
+      "joined": "Joined 08/11/2023",
+      "url": "./artical/article4.html"
+
+    },
+    {
+      "img": "./imgs/ai-generated-8718795_1280.webp",
+      "authorNmae": "Ahed Albadeesh",
+      "aricalsTitle": "the impact of tecnology on education",
+      "readers": "55",
+      "joined": "Joined 17/5/2021",
+      "url": "./artical/article6.html"
+
+    },
+    {
+      "img": "./imgs/wind-turbine-1578336_960_720.webp",
+      "authorNmae": "Laith KU",
+      "aricalsTitle": "Renewable Energy and Its Importance",
+      "readers": "35",
+      "joined": "Joined 13/8/2022",
+      "url": "./artical/article7.html"
+
+    },
+    {
+      "img": "./imgs/astronaut-7059910_960_720.webp",
+      "authorNmae": "Fidaa Alhoseen",
+      "aricalsTitle": "The Evolution of Space Exploration",
+      "readers": "15",
+      "joined": "Joined 14/5/2021",
+      "url": "./artical/article10.html"
+
+    },
+    {
+      "img": "./imgs/mental-health-6994374_960_720.webp",
+      "authorNmae": "Majed Albonay",
+      "aricalsTitle": "The Role of Mental Health Awareness in Society",
+      "readers": "25",
+      "joined": "Joined 13/9/2021",
+      "url": "./artical/article8.html"
+
+    },
+    {
+      "img": "./imgs/security-department-1653345_960_720.webp",
+      "authorNmae": "Saher SA",
+      "aricalsTitle": "The Importance of Cybersecurity in the Digital Age",
+      "readers": "51",
+      "joined": "Joined 8/8/2021",
+      "url": "./artical/article9.html"
+
+    },
+    {
+      "img": "imgs/oop.jpg",
+      "authorNmae": "Amer Monther",
+      "aricalsTitle": "Object Oriented Programming",
+      "readers": "36",
+      "joined": "Joined 02/10/2021",
+      "url": "./artical/article5.html"
+
+    },
+    {
+      "img": "imgs/ai-7977960_1280.jpg",
+      "authorNmae": "Ameer Abohamra",
+      "aricalsTitle": "the future of AI",
+      "readers": "73",
+      "joined": "Joined 04/9/2023",
+      "url": "./artical/article1.html"
+
+    },
+    {
+      "img": "./imgs/team-4817006_960_720.jpg",
+      "authorNmae": "Amer Monther",
+      "aricalsTitle": "Human development",
+      "readers": "71",
+      "joined": "Joined 11/8/2022",
+      "url": "./artical/article2.html"
+
+    },
+    {
+      "img": "./imgs/nail-polish-1150358_1280.jpg",
+      "authorNmae": "Taj Altaki",
+      "aricalsTitle": "Harmful effects of cosmetics",
+      "readers": "63",
+      "joined": "Joined 07/7/2019",
+      "url": "./artical/article3.html"
+
+    },
+    {
+      "img": "./imgs/doctor-6146905_960_720.webp",
+      "authorNmae": "Ammar Bhsas",
+      "aricalsTitle": "Thoracic Surgery",
+      "readers": "61",
+      "joined": "Joined 08/11/2023",
+      "url": "./artical/article4.html"
+
+    },
+    {
+      "img": "./imgs/ai-generated-8718795_1280.webp",
+      "authorNmae": "Ahed Albadeesh",
+      "aricalsTitle": "the impact of tecnology on education",
+      "readers": "55",
+      "joined": "Joined 17/5/2021",
+      "url": "./artical/article6.html"
+
+    },
+    {
+      "img": "./imgs/wind-turbine-1578336_960_720.webp",
+      "authorNmae": "Laith KU",
+      "aricalsTitle": "Renewable Energy and Its Importance",
+      "readers": "35",
+      "joined": "Joined 13/8/2022",
+      "url": "./artical/article7.html"
+
+    },
+    {
+      "img": "./imgs/astronaut-7059910_960_720.webp",
+      "authorNmae": "Fidaa Alhoseen",
+      "aricalsTitle": "The Evolution of Space Exploration",
+      "readers": "15",
+      "joined": "Joined 14/5/2021",
+      "url": "./artical/article10.html"
+
+    },
+    {
+      "img": "./imgs/mental-health-6994374_960_720.webp",
+      "authorNmae": "Majed Albonay",
+      "aricalsTitle": "The Role of Mental Health Awareness in Society",
+      "readers": "25",
+      "joined": "Joined 13/9/2021",
+      "url": "./artical/article8.html"
+
+    },
+    {
+      "img": "./imgs/security-department-1653345_960_720.webp",
+      "authorNmae": "Saher SA",
+      "aricalsTitle": "The Importance of Cybersecurity in the Digital Age",
+      "readers": "51",
+      "joined": "Joined 8/8/2021",
+      "url": "./artical/article9.html"
+
+    },
+
+  ]
+  function addArtical() {
+    for (articl of articalList) {
+      let newArtical =
+        `
+         <div class="friend bg-white rad-6 p-20 p-relative">
+          <div class="contact">
+            <i class="fa-solid fa-phone"></i>
+            <i class="fa-regular fa-envelope"></i>
+          </div>
+          <div class="txt-c">
+            <img decoding="async" class="rad-half mt-10 mb-10 w-100 h-100" src="${articl.img}" alt="" />
+            <h4 class="m-0">${articl.authorNmae}</h4>
+            <p class="c-grey fs-13 mt-5 mb-0">${articl.aricalsTitle}</p>
+          </div>
+          <div class="icons fs-14 p-relative">
+            <div class="mb-10">
+              <i class="fa-solid fa-eye"></i>
+              <span>${articl.readers} reader</span>
+            </div>
+            <span class="vip fw-bold c-orange">VIP</span>
+          </div>
+          <div class="info between-flex fs-13">
+            <span class="c-grey">${articl.joined}</span>
+            <div>
+              <a class="bg-blue c-white btn-shape" href="${articl.url}">read</a>
+
+            </div>
+          </div>
+        </div> 
+      `
+      document.getElementById("total").innerHTML += newArtical
+    }
+  }
+  addArtical()
+</script>
+
+</html>

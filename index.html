@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home Page</title>
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="css/framework.css" />
+  <link rel="stylesheet" href="css/master.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&#038;display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="page d-flex">
+    <div class="sidebar bg-white p-20 p-relative">
+      <h3 class="p-relative txt-c mt-0">Home Page</h3>
+      <ul>
+        <li>
+          <a class="active d-flex align-center fs-14 c-black rad-6 p-10" href="index.html">
+            <i class="fa-regular fa-chart-bar fa-fw"></i>
+            <span>Home page</span>
+          </a>
+        </li>
+
+        <li>
+          <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="profile.html">
+            <i class="fa-regular fa-user fa-fw"></i>
+            <span>Profile</span>
+          </a>
+        </li>
+
+
+        <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="articles.html">
+          <i class="fa-solid fa-newspaper"></i>
+          <span>Articles</span>
+        </a>
+        </li>
+
+        <li>
+          <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="abutUs.html">
+            <i class="fa-regular fa-credit-card fa-fw"></i>
+            <span>about us</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="content w-full">
+      <!-- Start Head -->
+      <div class="head bg-white p-15 between-flex">
+        <div class="search p-relative">
+          <input class="p-10" type="search" placeholder="Enter article name" />
+        </div>
+        <div>
+          <h1 style="margin: 0;">Articles World</h1>
+        </div>
+        <div class="icons d-flex align-center">
+          <span class="notification p-relative">
+            <i class="fa-regular fa-bell fa-lg"></i>
+          </span>
+          <img decoding="async" src="imgs/avatar.png" alt="" />
+        </div>
+      </div>
+      <!-- End Head -->
+      <h1 class="p-relative">Home Page</h1>
+      <div class="wrapper d-grid gap-20">
+        <!-- Start Welcome Widget -->
+        <div class="welcome bg-white rad-10 txt-c-mobile block-mobile">
+          <div class="intro p-20 d-flex space-between bg-eee">
+            <div>
+              <h2 class="m-0">Welcome</h2>
+              <p class="c-grey mt-5">Articles site</p>
+            </div>
+            <img decoding="async" class="hide-mobile" src="imgs/welcome.png" alt="" />
+          </div>
+          <img decoding="async" src="imgs/avatar.png" alt="" class="avatar" />
+          <div class="body txt-c d-flex p-20 mt-20 mb-20 block-mobile">
+            <div>Admin<span class="d-block c-grey fs-14 mt-10">Amer Monther</span></div>
+            <div>80 <span class="d-block c-grey fs-14 mt-10">Articles</span></div>
+
+          </div>
+          <a href="profile.html" class="visit d-block fs-14 bg-blue c-white w-fit btn-shape">Profile</a>
+        </div>
+        <!-- End Welcome Widget -->
+        <!-- Start Quick Draft Widget -->
+        <div class="quick-draft p-20 bg-white rad-10">
+          <h2 class="mt-0 mb-10">Create your own article</h2>
+
+          <form>
+            <input class="d-block mb-20 w-full p-10 b-none bg-eee rad-6" type="text" placeholder="Title" />
+            <textarea class="d-block mb-20 w-full p-10 b-none bg-eee rad-6" placeholder="Your article"></textarea>
+            <input class="save d-block fs-14 bg-blue c-white b-none w-fit btn-shape" type="submit" value="Save" />
+          </form>
+        </div>
+        <!-- End Quick Draft Widget -->
+
+
+        <!-- Start Latest articles Widget -->
+        <div class="latest-news p-20 bg-white rad-10 txt-c-mobile">
+          <h2 class="mt-0 mb-20">Latest articles</h2>
+          <div class="news-row d-flex align-center">
+            <img decoding="async" src="imgs/avatar1.png" alt="" />
+            <div class="info">
+              <h3>Amer Monther</h3>
+              <p class="m-0 fs-14 c-grey">Human development</p>
+            </div>
+            <div class="btn-shape bg-eee fs-13 label">3 Days Ago</div>
+            <div style="width: 5px;"></div>
+            <div class="btn-shape bg-eee fs-13 label" style="background-color: blue;"><a href="./artical/article2.html"
+                style="color: white;">View</a></div>
+          </div>
+          <div class="news-row d-flex align-center">
+            <img decoding="async" src="imgs/avatar2.png" alt="" />
+            <div class="info">
+              <h3>Taj altaki</h3>
+              <p class="m-0 fs-14 c-grey">Harmful effects of cosmetics</p>
+            </div>
+            <div class="btn-shape bg-eee fs-13 label">5 Days Ago</div>
+            <div style="width: 5px;"></div>
+            <div class="btn-shape bg-eee fs-13 label" style="background-color: blue;"><a href="./artical/article3.html"
+                style="color: white;">View</a></div>
+          </div>
+          <div class="news-row d-flex align-center">
+            <img decoding="async" src="imgs/avatar3.png" alt="" />
+            <div class="info">
+              <h3>Ameer Abohamra</h3>
+              <p class="m-0 fs-14 c-grey">The future of AI</p>
+            </div>
+            <div class="btn-shape bg-eee fs-13 label">7 Days Ago</div>
+            <div style="width: 5px;"></div>
+            <div class="btn-shape bg-eee fs-13 label" style="background-color: blue;"><a href="./artical/article1.html"
+                style="color: white;">View</a></div>
+          </div>
+          <div class="news-row d-flex align-center">
+            <img decoding="async" src="imgs/avatar4.png" alt="" />
+            <div class="info">
+              <h3>Ammar Bhsas</h3>
+              <p class="m-0 fs-14 c-grey">Thoracic surgery</p>
+            </div>
+            <div class="btn-shape bg-eee fs-13 label">9 Days Ago</div>
+            <div style="width: 5px;"></div>
+            <div class="btn-shape bg-eee fs-13 label" style="background-color: blue;"><a href="./artical/article4.html"
+                style="color: white;">View</a></div>
+          </div>
+        </div>
+        <!-- End Latest articles Widget -->
+
+        <!-- Start Top Search Word Widget -->
+        <div class="search-items p-20 bg-white rad-10">
+          <h2 class="mt-0 mb-20">Top Search Items</h2>
+          <div class="items-head d-flex space-between c-grey mb-10">
+            <div>Keyword</div>
+            <div>Search Count</div>
+          </div>
+          <div class="items d-flex space-between pt-15 pb-15">
+            <span>Programming</span>
+            <span class="bg-eee fs-13 btn-shape">220</span>
+          </div>
+          <div class="items d-flex space-between pt-15 pb-15">
+            <span>pharmaceutical</span>
+            <span class="bg-eee btn-shape fs-13">180</span>
+          </div>
+          <div class="items d-flex space-between pt-15 pb-15">
+            <span>AI</span>
+            <span class="bg-eee btn-shape fs-13">160</span>
+          </div>
+          <div class="items d-flex space-between pt-15 pb-15">
+            <span>Code</span>
+            <span class="bg-eee btn-shape fs-13">145</span>
+          </div>
+          <div class="items d-flex space-between pt-15 pb-15">
+            <span>Design</span>
+            <span class="bg-eee btn-shape fs-13">110</span>
+          </div>
+          <div class="items d-flex space-between pt-15 pb-15">
+            <span>Logic</span>
+            <span class="bg-eee btn-shape fs-13">95</span>
+          </div>
+        </div>
+        <!-- End Top Search Word Widget -->
+
+
+        <!-- Start Latest Post Widget -->
+        <div class="latest-post p-20 bg-white rad-10 p-relative">
+          <h2 class="mt-0 mb-25">Latest Post</h2>
+          <div class="top d-flex align-center">
+            <img decoding="async" class="avatar mr-15" src="imgs/avatar.png" alt="" />
+            <div class="info">
+              <span class="d-block mb-5 fw-bold">Ameer Abohamra</span>
+              <span class="c-grey">About 3 Hours Ago</span>
+            </div>
+          </div>
+          <div class="post-content txt-c-mobile pt-20 pb-20 mt-20 mb-20">
+            You can fool all of the people some of the time, and some of the people all of the time, but you can't
+            fool all of the people all of the time.
+          </div>
+          <div class="post-stats between-flex c-grey">
+            <div>
+              <i class="fa-regular fa-heart"></i>
+              <span>1.8K</span>
+            </div>
+            <div>
+              <i class="fa-regular fa-comments"></i>
+              <span>500</span>
+            </div>
+          </div>
+        </div>
+        <!-- End Latest Post Widget -->
+        <!-- Start Most read articles Table -->
+      </div>
+
+      <div class="projects p-20 bg-white rad-10 m-20">
+        <h2 class="mt-0 mb-20">Most read articles</h2>
+        <div class="responsive-table">
+          <table class="fs-15 w-full">
+            <thead>
+              <tr>
+                <td>Title</td>
+                <td>author</td>
+                <td>Number of pages</td>
+                <td>Number of readers</td>
+
+                <td>Article link</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>AI</td>
+                <td>Ameer abohamra</td>
+                <td>5</td>
+                <td>73</td>
+
+                <td><span class="label btn-shape bg-blue c-white"><a href="./artical/article1.html"
+                      style="color: white;">Click
+                      here</a></span></td>
+              </tr>
+              <tr>
+                <td>Human development</td>
+                <td>Amer Monther</td>
+                <td>8</td>
+                <td>71</td>
+
+                <td><span class="label btn-shape bg-blue c-white"><a href="./artical/article2.html"
+                      style="color: white;">Click here</a></span>
+                </td>
+              </tr>
+              <tr>
+                <td>Harmful effects of cosmetics</td>
+                <td>Taj Altaki</td>
+                <td>3</td>
+                <td>63</td>
+
+                <td><span class="label btn-shape bg-blue c-white"><a href="./artical/article3.html"
+                      style="color: white;">Click here</a></span>
+                </td>
+              </tr>
+              <tr>
+                <td>Thoracic surgery</td>
+                <td>Ammar Bhsas</td>
+                <td>19</td>
+                <td>61</td>
+
+                <td><span class="label btn-shape bg-blue c-white"><a href="./artical/article4.html"
+                      style="color: white;">Click here</a></span>
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <!-- End Projects Table -->
+      <!-- Start Footer -->
+      <div class="footer" style="padding-left: 20px;">
+        <div class="container">
+          <div class="box">
+            <h3>Articles World</h3>
+            <ul class="social">
+              <li>
+                <a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F" target="_blank"
+                  class="facebook">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.google.com/url?client=internal-element-cse&cx=79c52b68e1b7d0d17&q=https://twitter.com/%3Flang%3Dar&sa=U&ved=2ahUKEwjIlb-J8fGJAxVqgP0HHQ40JasQFnoECAgQAQ&usg=AOvVaw0oUrsmy7E_cFx6QvqRlzbh"
+                  target="_blank" class="twitter">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/youtube" target="_blank" class="youtube">
+                  <i class="fab fa-youtube"></i>
+                </a>
+              </li>
+            </ul>
+            <p class="text">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus nulla rem, dignissimos iste
+              aspernatur
+            </p>
+          </div>
+          <div class="box">
+
+          </div>
+          <div class="box">
+            <div class="line">
+              <i class="fas fa-map-marker-alt fa-fw"></i>
+              <div class="info">Syria, Al-swaedaa</div>
+            </div>
+            <div class="line">
+              <i class="far fa-clock fa-fw"></i>
+              <div class="info">Business Hours: From 10:00 To 18:00</div>
+            </div>
+            <div class="line">
+              <i class="fas fa-phone-volume fa-fw"></i>
+              <div class="info">
+                <span>+963 996 760 705</span>
+                <span>+963 992 714 811</span>
+              </div>
+            </div>
+            <div class="line">
+              <i class="fa-solid fa-envelope"></i>
+              <div class="info">
+                <span>amermonther5244@gmail.com</span>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <!-- End Footer -->
+    </div>
+  </div>
+</body>
+
+</html>

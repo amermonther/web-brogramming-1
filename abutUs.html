@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>about us</title>
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="css/framework.css" />
+  <link rel="stylesheet" href="css/master.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&#038;display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="page d-flex">
+    <div class="sidebar bg-white p-20 p-relative">
+      <h3 class="p-relative txt-c mt-0">Abut Us</h3>
+      <ul>
+        <li>
+          <a class="active d-flex align-center fs-14 c-black rad-6 p-10" href="index.html">
+            <i class="fa-regular fa-chart-bar fa-fw"></i>
+            <span>Home page</span>
+          </a>
+        </li>
+
+        <li>
+          <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="profile.html">
+            <i class="fa-regular fa-user fa-fw"></i>
+            <span>Profile</span>
+          </a>
+        </li>
+
+
+        <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="articles.html">
+          <i class="fa-solid fa-newspaper"></i>
+          <span>Articles</span>
+        </a>
+        </li>
+
+        <li>
+          <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="abutUs.html">
+            <i class="fa-regular fa-credit-card fa-fw"></i>
+            <span>Abut Us</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="content w-full">
+      <!-- Start Head -->
+      <div class="head bg-white p-15 between-flex">
+        <div class="search p-relative">
+          <input class="p-10" type="search" placeholder="Type A Keyword" />
+        </div>
+        <div class="icons d-flex align-center">
+          <span class="notification p-relative">
+            <i class="fa-regular fa-bell fa-lg"></i>
+          </span>
+          <img decoding="async" src="imgs/avatar.png" alt="" />
+        </div>
+      </div>
+      <!-- End Head -->
+      <h1 class="p-relative">Abut us Page</h1>
+      <div class="plans-page d-grid m-20 gap-20" id="plan-page">
+
+        <div class="footer" style="padding-left: 20px;">
+          <div class="container">
+            <div class="box">
+              <h3>Articles World</h3>
+              <ul class="social">
+                <li>
+                  <a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F" target="_blank"
+                    class="facebook">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.google.com/url?client=internal-element-cse&cx=79c52b68e1b7d0d17&q=https://twitter.com/%3Flang%3Dar&sa=U&ved=2ahUKEwjIlb-J8fGJAxVqgP0HHQ40JasQFnoECAgQAQ&usg=AOvVaw0oUrsmy7E_cFx6QvqRlzbh"
+                    target="_blank" class="twitter">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/youtube" target="_blank" class="youtube">
+                    <i class="fab fa-youtube"></i>
+                  </a>
+                </li>
+              </ul>
+              <p class="text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus nulla rem, dignissimos iste
+                aspernatur
+              </p>
+            </div>
+            <div class="box">
+
+            </div>
+            <div class="box">
+              <div class="line">
+                <i class="fas fa-map-marker-alt fa-fw"></i>
+                <div class="info">Syria, Al-swaedaa</div>
+              </div>
+              <div class="line">
+                <i class="far fa-clock fa-fw"></i>
+                <div class="info">Business Hours: From 10:00 To 18:00</div>
+              </div>
+              <div class="line">
+                <i class="fas fa-phone-volume fa-fw"></i>
+                <div class="info">
+                  <span>+963 996 760 705</span>
+                  <span>+963 992 714 811</span>
+                </div>
+              </div>
+              <div class="line">
+                <i class="fa-solid fa-envelope"></i>
+                <div class="info">
+                  <span>amermonther5244@gmail.com</span>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+      </div>
+
+</body>
+<script>
+  let whoWeAre = " We are a group of IT engineering students studying at the Syrian Virtual University. We created thiswebsite because it was requested as an assignment for the Web Programming 1 course in the S24 semester. Wedeveloped this website using the following tools:"
+  let lorem = " The few remaining lines are just to fill in the blanks. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eveniet doloremque rerum nesciunt hic animi ullam repellat harum laboriosam ratione commodi aperiam, qui quasi in ab obcaecati optio iure magnam?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque odit quas, corporis aliquam remquam odio molestias aperiam nam, quae id rerum debitis autem ducimus placeat fuga, fugit minus ullam?"
+  document.getElementById("plan-page").innerHTML +=
+    `
+    <div class="plan green bg-white p-20">
+          <div class="top bg-green txt-c p-20">
+            <h2 class="m-0 c-white">who we are ?</h2>
+            <p style="color: white; line-height: 2;">${whoWeAre}</p>
+            <div style="color: white;">
+              <p>HTML</p>
+              <p>CSS</p>
+              <p>Bootstrap</p>
+              <p>JS</p>
+              <p style="line-height: 2;">${lorem} </p>
+            </div>
+
+          </div>
+
+          <a href="#" class="btn-shape bg-green c-white d-block w-fit">Join</a>
+
+  `
+</script>
+
+</html>
